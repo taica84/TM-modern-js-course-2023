@@ -129,3 +129,9 @@ header h1 {
     width: 100%;
   }
 }
+
+
+/* display none */
+.hide{
+  display: none;
+}
