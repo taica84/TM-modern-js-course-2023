@@ -125,13 +125,20 @@ header h1 {
 }
 
 @media (max-width: 500px) {
-  .items li , .cars li {
+  .items li,
+  .cars li {
     width: 100%;
   }
 }
 
-
 /* display none */
-.hide{
+.hide {
   display: none;
 }
+
+/* edit mode */
+.edit-mode {
+  color: rgb(170, 170, 170);
+}
+
+
