@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ---------  setInterval section-------- */
+
+
+h1 {
+  font-size: 30px;
+}
+
+.buttons {
+  display: flex;
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 15px;
+  margin: 0 20px;
+  font-size: 17px;
+  cursor: pointer;
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+}
+
+.start {
+  background-color: rgb(1, 215, 1);
+}
+
+.stop {
+  background-color: red;
+}
+
+/* ---------  setTimeout section-------- */
+
+.async-two {
+  background-color: rgb(146, 146, 146);
+}
+
+/* ---------  setTimeout section-------- */
+
+.red{
+  color: crimson;
+}
+
+.count-timeout {
+  font-size: 50px;
+  margin-left: 10px;
+  color: red;
+}

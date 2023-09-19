@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+
+.user-container {
+  max-width: 700px;
+  height: auto;
+  padding: 1em;
+  border: 1px solid black;
+  border-radius: 7px;
+}
+
+.user-title {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 1em;
+  align-items: center;
+}
+
+.user-button-generator {
+  font-size: 15px;
+  font-weight: 700;
+  padding: 0.7em 10em;
+  color: white;
+  background-color: black;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 0.5em;
+}
+
+.user-card {
+  display: flex;
+  align-items: center;
+}
+
+.user-image {
+  padding: 2em;
+}
+.user-image img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.user-details p {
+   margin-bottom: 0.4em;
+}
+
+/* ---------- spinner downloaded */
+.spinner {
+  position: absolute; 
+  top:20%;
+  left: 30%;
+  width: 5px;
+  height: 5px;
+  display: none;
+}
+.spinner:after {
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  margin: 8px;
+  box-sizing: border-box;
+  border: 32px solid black;
+  border-color: white transparent white transparent;
+  animation: spinner 1.2s infinite;
+}
+@keyframes spinner {
+  0% {
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  50% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  100% {
+    transform: rotate(1800deg);
+  }
+}
+
+.show {
+  display: block;
+}
+
+
+
+/* --------------  TYPICODE TODO------------- */
+
+header {
+  margin-bottom: 20px;
+}
+
+.submit-todo-button {
+  padding: 10px;
+  background: salmon;
+  color: white;
+  border-radius: 5px;
+  width: 100px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type='text'] {
+  padding: 5px;
+  border-radius: 5px;
+  width: 450px;
+  height: 35px;
+  border: 1px #ccc solid;
+  margin-right: 5px;
+}
+
+#todo-list {
+  display: grid;
+  grid-template-columns: 150px 150px 150px;
+  margin-top: 20px;
+}
+
+#todo-list > div {
+  border: 1px #666 solid;
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+  max-width: 150px;
+ 
+}
+
+.done {
+  background: #ccc;
+}
+
