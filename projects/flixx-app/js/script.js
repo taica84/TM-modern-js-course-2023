@@ -9,7 +9,7 @@ console.log(global.currentPage);
 function highlightActiveLink() {
   const links = document.querySelectorAll('.nav-link');
   links.forEach((link) => {
-    if (link.getAttribute('href') === global.currentPage.slice(20)) {
+    if (link.getAttribute('href') === global.currentPage) {
       link.classList.add('active');
     } 
   });
@@ -18,19 +18,19 @@ function highlightActiveLink() {
 function init() {
   switch (global.currentPage) {
     case `/`:
-    case `/projects/flixx-app/home.html`:
+    case `home.html`:
       console.log('Home');
       break;
-    case `/projects/flixx-app/shows.html`:
+    case `shows.html`:
       console.log('Shows');
       break;
-    case `/projects/flixx-app/movie-details.html`:
+    case `movie-details.html`:
       console.log('Movie-Details');
       break;
-    case `/projects/flixx-app/tv-details.html`:
+    case `tv-details.html`:
       console.log('Tv-Details');
       break;
-    case `/projects/flixx-app/search.html`:
+    case `search.html`:
       console.log('Search');
       break;
   }
