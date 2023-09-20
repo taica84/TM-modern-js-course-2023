@@ -9,7 +9,7 @@ console.log(global.currentPage);
 function highlightActiveLink() {
   const links = document.querySelectorAll('.nav-link');
   links.forEach((link) => {
-    if (link.getAttribute('href') === global.currentPage) {
+    if (link.getAttribute('href') === global.currentPage.slice(1)) {
       link.classList.add('active');
     } 
    if(global.currentPage === '/home.html') {
