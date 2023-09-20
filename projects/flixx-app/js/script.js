@@ -1,7 +1,7 @@
 console.log('flixx-app');
 
 const global = {
-  currentPage: window.location.pathname.slice(20),
+  currentPage: window.location.pathname.slice(19),
 };
 
 console.log(global.currentPage);
@@ -9,10 +9,10 @@ console.log(global.currentPage);
 function highlightActiveLink() {
   const links = document.querySelectorAll('.nav-link');
   links.forEach((link) => {
-    if (link.getAttribute('href') === global.currentPage) {
+    if (link.getAttribute('href') === global.currentPage.slice(1)) {
       link.classList.add('active');
     } 
-   if(global.currentPage === 'home.html') {
+   if(global.currentPage === '/home.html') {
       document.querySelector('.logo a').classList.add('active');
     }
   });
