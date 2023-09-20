@@ -1,12 +1,12 @@
 console.log('flixx-app');
 
 const global = {
-  currentPage: window.location.pathname,
+  currentPage: window.location.pathname.slice(19),
 };
 
-const myPath = '/projects/flixx-app'
 
-console.log(global.currentPage);
+
+
 
 function highlightActiveLink() {
   const links = document.querySelectorAll('.nav-link');
@@ -18,23 +18,23 @@ function highlightActiveLink() {
 }
 
 function init() {
-    
-    
+
+  
   switch (global.currentPage) {
-    case `${myPath}/`:
-    case `${myPath}/home.html`:
+    case `/`:
+    case `/home.html`:
       console.log('Home');
       break;
-    case `${myPath}/shows.html`:
+    case `/shows.html`:
       console.log('Shows');
       break;
-    case `${myPath}/movie-details.html`:
+    case `/movie-details.html`:
       console.log('Movie-Details');
       break;
-    case `${myPath}/tv-details.html`:
+    case `/tv-details.html`:
       console.log('Tv-Details');
       break;
-    case `${myPath}/search.html`:
+    case `/search.html`:
       console.log('Search');
       break;
   }
